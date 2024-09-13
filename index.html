@@ -5,13 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="carousel.css">
 </head>
 
 <body>
-    <h1>Test</h1>
     <div class="main">
-        <img src="./assets/the-art-dude-high-resolution-logo.png" alt="" />
+        <div class="header">
+            <div class="navbar">
+                <div id="main-logo">
+                    <img src="./assets/the-art-dude-high-resolution-logo.png" alt=""/>
+                </div>
+                <div class="navbar links">
+                    <a href="">Home</a>
+                    <a href="">About</a>
+                    <a href="">Projects</a>
+                    <a href="">Contact</a>
+                </div>
+            </div>
+        </div>
+        <section class="slider-wrapper">
+            <button class="slide-arrow" id="slide-arrow-prev">
+              &#8249;
+            </button>
+            
+            <button class="slide-arrow" id="slide-arrow-next">
+              &#8250;
+            </button>
+            
+            <ul class="slides-container" id="slides-container">
+              <li class="slide"></li>
+              <li class="slide"></li>
+              <li class="slide"></li>
+              <li class="slide"></li>
+            </ul>
+          </section>
     </div>
 </body>
 
