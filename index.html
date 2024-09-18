@@ -2,47 +2,85 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="//unpkg.com/alpinejs" defer></script>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="main.css">
-    <!-- <link rel="stylesheet" href="carousel.css"> -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+  <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-    <div class="main">
-        <div class="header">
-            <div class="navbar">
-                <div id="main-logo">
-                    <img src="./assets/the-art-dude-high-resolution-logo.png" alt=""/>
-                </div>
-                <div class="navbar links">
-                    <a href="">Home</a>
-                    <a href="">About</a>
-                    <a href="">Projects</a>
-                    <a href="">Contact</a>
-                </div>
+  <div class="main">
+     <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="index.html">
+          <img src="./assets/the-art-dude-high-resolution-logo-text-only.png" alt="" />
+        </a>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item">
+            Home
+          </a>
+
+          <a class="navbar-item">
+            Documentation
+          </a>
+
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              More
+            </a>
+
+            <div class="navbar-dropdown">
+              <a class="navbar-item">
+                About
+              </a>
+              <a class="navbar-item is-selected">
+                Jobs
+              </a>
+              <a class="navbar-item">
+                Contact
+              </a>
+              <hr class="navbar-divider">
+              <a class="navbar-item">
+                Report an issue
+              </a>
             </div>
+          </div>
         </div>
-        <section class="slider-wrapper">
-            <button class="slide-arrow" id="slide-arrow-prev">
-              &#8249;
-            </button>
-            
-            <button class="slide-arrow" id="slide-arrow-next">
-              &#8250;
-            </button>
-            
-            <ul class="slides-container" id="slides-container">
-              <li class="slide"></li>
-              <li class="slide"></li>
-              <li class="slide"></li>
-              <li class="slide"></li>
-            </ul>
-          </section>
+      </div>
+    </nav>
+    <div class="conatiner">
+      <figure id="main-logo" class="image">
+        <img src="./assets/socal-art-explorations-high-resolution-logo-transparent.png" alt="">
+      </figure>
     </div>
+    
+    <div class="columns">
+      <div class="column is-two-fifths" id="intro-img">
+        <image src="./assets/20160526_181839.jpg" >
+
+      </div>
+      <div class="column">
+        <div class="section is-medium">
+          <h1 class="title">Art for everyone</h1>
+          <h2 class="subtitle">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dicta vel tempore tenetur ipsa amet assumenda sint odit! Distinctio dicta quasi rerum adipisci repudiandae possimus? Deserunt animi aut quod harum!
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
