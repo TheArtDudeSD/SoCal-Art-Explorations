@@ -26,6 +26,6 @@ body {
     max-width: 80%;
 }
 
-#intro-img {
-    padding: 2rem;
+.img-padding {
+    padding: 4rem;
 }
